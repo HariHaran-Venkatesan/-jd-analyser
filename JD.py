@@ -1,29 +1,38 @@
 import anthropic
-
+import json
 import os
 from dotenv import load_dotenv
 load_dotenv()
 jd = input("Paste the job description: ")
-prompt = f"""You are an expert technical recruiter. Analyze this job description and extract:
+prompt = f"""Analyze this job description and respond with ONLY valid JSON (no markdown, no explanation) in this exact format:
 
-1. REQUIRED SKILLS (must-have)
-2. NICE TO HAVE SKILLS (preferred)
-3. EXPERIENCE LEVEL (junior/mid/senior + years)
-4. SALARY RANGE (if mentioned, else say "Not disclosed")
-5. RED FLAGS (anything unusual or concerning)
-6. ESTIMATED INDIA SALARY RANGE: Based on the role, skills, and experience level, 
-estimate realistic salary range for Hyderabad and Bangalore markets in LPA."
+{{
+  "required_skills": ["skill1", "skill2"],
+  "nice_to_have_skills": ["skill1", "skill2"],
+  "experience_level": "junior/mid/senior",
+  "experience_years": "estimated range",
+  "salary_disclosed": true/false,
+  "estimated_salary_hyderabad_lpa": "range",
+  "estimated_salary_bangalore_lpa": "range",
+  "red_flags": ["flag1", "flag2"]
+}}
 
 Job Description:
-{jd}
-
-Be specific and concise."""
+{jd}"""
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 messages = client.messages.create(
     model = "claude-haiku-4-5-20251001",
     max_tokens=512,
     messages= [{"role": "user", "content": prompt}])
-print(messages.content[0].text)
 
+response_text = messages.content[0].text.strip()
 
+if response_text.startswith("```"):
+    response_text = response_text.replace("```json", "").replace("```", "").strip()
+
+data = json.loads(response_text)
+
+print("Required Skills:", data["required_skills"])
+print("Experience Level:", data["experience_level"])
+print("Hyderabad Salary:", data["estimated_salary_hyderabad_lpa"])
