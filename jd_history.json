@@ -36,5 +36,121 @@
         "Undefined project scope"
       ]
     }
+  },
+  {
+    "timestamp": "2026-06-30 13:59:51.901716",
+    "jd_snippet": "Job BriefWe are looking for a skilled Java Developer to join our engineering team. In this role, you",
+    "analysis": {
+      "required_skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "RESTful APIs",
+        "SQL",
+        "NoSQL",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "Git",
+        "Maven",
+        "Gradle",
+        "Object-Oriented Programming",
+        "Problem-solving"
+      ],
+      "nice_to_have_skills": [
+        "Microservices",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "System design",
+        "Agile methodologies"
+      ],
+      "experience_level": "mid",
+      "experience_years": "3-5 years",
+      "salary_disclosed": false,
+      "estimated_salary_hyderabad_lpa": "7-12 LPA",
+      "estimated_salary_bangalore_lpa": "9-15 LPA",
+      "red_flags": [
+        "No salary mentioned",
+        "Vague experience requirements not explicitly stated in job description"
+      ],
+      "my_salary_estimate": "12-15 LPA"
+    }
+  },
+  {
+    "timestamp": "2026-06-30 14:06:11.817156",
+    "jd_snippet": "Job BriefWe are looking for a skilled Java Developer to join our engineering team. In this role, you",
+    "analysis": {
+      "required_skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "RESTful APIs",
+        "SQL",
+        "NoSQL",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "Git",
+        "Maven",
+        "Gradle",
+        "Object-Oriented Programming"
+      ],
+      "nice_to_have_skills": [
+        "Microservices",
+        "Docker",
+        "Kubernetes",
+        "System Design",
+        "Performance Optimization",
+        "Code Review"
+      ],
+      "experience_level": "mid",
+      "experience_years": "3-6 years",
+      "salary_disclosed": false,
+      "estimated_salary_hyderabad_lpa": "8-14",
+      "estimated_salary_bangalore_lpa": "10-16",
+      "red_flags": [],
+      "my_salary_estimate": "9-12 LPA"
+    }
+  },
+  {
+    "timestamp": "2026-06-30 14:06:58.930081",
+    "jd_snippet": "Job BriefWe are looking for a skilled Java Developer to join our engineering team. In this role, you",
+    "analysis": {
+      "required_skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "REST APIs",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "Git",
+        "Maven",
+        "Gradle",
+        "OOP",
+        "SQL",
+        "NoSQL"
+      ],
+      "nice_to_have_skills": [
+        "Agile",
+        "System Architecture",
+        "Code Review",
+        "Performance Optimization",
+        "Debugging"
+      ],
+      "experience_level": "mid",
+      "experience_years": "3-6",
+      "salary_disclosed": false,
+      "estimated_salary_hyderabad_lpa": "8-14",
+      "estimated_salary_bangalore_lpa": "10-16",
+      "red_flags": [
+        "No specific experience years mentioned",
+        "No salary range disclosed",
+        "Vague on backend complexity level",
+        "No mention of team size or reporting structure"
+      ],
+      "my_salary_estimate": "9-12 LPA"
+    }
   }
 ]

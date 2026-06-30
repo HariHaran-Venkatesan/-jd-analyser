@@ -60,6 +60,8 @@ Job Description:
     print("Required Skills:", data["required_skills"])
     print("Experience Level:", data["experience_level"])
     print("Hyderabad Salary:", data["estimated_salary_hyderabad_lpa"])
+    my_estimate = input("Based on your experience, what's the real Hyderabad salary range? (or press Enter to skip): ")
+    data["my_salary_estimate"] = my_estimate
     return data
 
 while True:
