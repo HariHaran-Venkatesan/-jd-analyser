@@ -1,0 +1,40 @@
+[
+  {
+    "timestamp": "2026-06-30 13:55:52.896148",
+    "jd_snippet": "Job BriefWe are looking for a skilled Java Developer to join our engineering team. In this role, you",
+    "analysis": {
+      "required_skills": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "RESTful APIs",
+        "MySQL",
+        "PostgreSQL",
+        "Oracle",
+        "Git",
+        "Maven",
+        "Gradle",
+        "Object-Oriented Programming",
+        "SQL",
+        "NoSQL"
+      ],
+      "nice_to_have_skills": [
+        "Agile methodology",
+        "System architecture",
+        "Performance optimization",
+        "Code review"
+      ],
+      "experience_level": "mid",
+      "experience_years": "2-5",
+      "salary_disclosed": false,
+      "estimated_salary_hyderabad_lpa": "8-14",
+      "estimated_salary_bangalore_lpa": "10-16",
+      "red_flags": [
+        "No salary transparency",
+        "Vague team size and company context",
+        "No mention of career growth or learning opportunities",
+        "Undefined project scope"
+      ]
+    }
+  }
+]
