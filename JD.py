@@ -3,7 +3,10 @@ import json
 import os
 from dotenv import load_dotenv
 load_dotenv()
-jd = input("Paste the job description: ")
+while True:
+    jd = input("\nPaste job description (or type 'exit' to quit): ")
+    if jd.lower() == "exit":
+        break
 prompt = f"""Analyze this job description and respond with ONLY valid JSON (no markdown, no explanation) in this exact format:
 
 {{
